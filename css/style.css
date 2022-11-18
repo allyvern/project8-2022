@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'graffiti';
+    src: url('/fonts/GRAFFITI.TTF');
+  }
+
+@font-face{
+    font-family:'magazine';
+    src: url('/fonts/MagazineLetterByBrntlbrnl-Regular.ttf');
+}
+
+@font-face{
+  font-family:'paragraph';
+  src: url('/fonts/made_avenue/MADEAvenuePERSONALUSE-Regular.otf');
+}
+  h1 {
+    font-family:'graffiti';
+    text-align: center;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-family: 'magazine';
+    text-align: center;
+    font-size: 2em;
+  }
+
+  body{
+    background-color: #f3d6ff ;
+  }
+  
+  .navbar_bg {
+    display: flex;
+    position: sticky; 
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+  }
+
+  .navlist{
+    font-family:'graffiti';
+    display:flex;
+    text-decoration:none;
+    width:50%;
+  }
+  
+  .navlist li {
+      padding: 26px 30px;
+  }
+    
+  .navlist li a {
+      text-decoration: none;
+  }
+  
+  .navlist li a:hover {
+    background-color: rgb(238, 154, 255);
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  p{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .gallery{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20%;
+  }
+
+  .gallery img{
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width:500px) {
+
+  .gallery{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  .gallery img{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery img:hover {
+    opacity: .5;
+    transition: .5s ease;
+  }
+
+  .gallery .text {
+    background-color: #f3d6ff;
+  } 
+
+  .navlist{
+    align-content: center;
+    justify-content: space-between;
+  }
+  }
